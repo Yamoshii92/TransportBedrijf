@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\src",
+    "\\TransportBedrijfBackEnd",
+    "\\TransportBedrijfBackEnd\\TransportBedrijfBackEnd"
   ],
-  "SelectedNode": "\\src\\main.js",
   "PreviewInSolutionExplorer": false
 }

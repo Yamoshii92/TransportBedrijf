@@ -1,0 +1,6 @@
+@TransportBedrijfAPI_HostAddress = http://localhost:5117
+
+GET {{TransportBedrijfAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
