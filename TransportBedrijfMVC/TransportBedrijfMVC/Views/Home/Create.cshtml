@@ -1,0 +1,38 @@
+﻿@model TransportBedrijfMVC.Models.Voertuig
+
+@{
+    ViewData["Title"] = "Voertuig toevoegen";
+}
+
+<h1>Voertuig toevoegen</h1>
+
+<form method="post">
+    <div>
+        <label>Kenteken</label>
+        <input asp-for="Kenteken" />
+    </div>
+    <div>
+        <label>Type</label>
+        <select asp-for="Type">
+            <option value="PERSONEN">Personen</option>
+            <option value="VRACHT">Vracht</option>
+        </select>
+    </div>
+    <div>
+        <label>Kilometerstand</label>
+        <input asp-for="Kilometerstand" />
+    </div>
+    <div>
+        <label>Afschrijving</label>
+        <input asp-for="Afschrijving" />
+    </div>
+    <div>
+        <label>Max personen</label>
+        <input asp-for="MaxPersonen" />
+    </div>
+    <div>
+        <label>Max capaciteit</label>
+        <input asp-for="MaxCapaciteit" />
+    </div>
+    <button type="submit">Toevoegen</button>
+</form>

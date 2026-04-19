@@ -1,0 +1,31 @@
+﻿@model List<TransportBedrijfMVC.Models.Voertuig>
+
+@{
+    ViewData["Title"] = "Voertuigen";
+}
+
+<h1>Voertuigoverzicht</h1>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Kenteken</th>
+            <th>Type</th>
+            <th>Kilometerstand</th>
+            <th>Afschrijving</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var voertuig in Model)
+        {
+            <tr>
+                <td>@voertuig.VoertuigId</td>
+                <td>@voertuig.Kenteken</td>
+                <td>@voertuig.Type</td>
+                <td>@voertuig.Kilometerstand</td>
+                <td>@voertuig.Afschrijving</td>
+            </tr>
+        }
+    </tbody>
+</table>
